@@ -1,0 +1,42 @@
+{
+  "name": "@adviverse/desktop-react",
+  "version": "0.1.0",
+  "description": "<AdviverseAd/> \u2014 React ad card for desktop webview apps (Electron, Tauri, CEF). Built on @adviverse/desktop.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@adviverse/desktop": "^0.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "react": "^18.3.0",
+    "typescript": "^5.6.2"
+  },
+  "keywords": [
+    "adviverse",
+    "ads",
+    "desktop",
+    "react",
+    "electron",
+    "tauri"
+  ]
+}
